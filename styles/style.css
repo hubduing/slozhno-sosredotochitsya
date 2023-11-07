@@ -11,7 +11,7 @@
 
 .header {
   min-width: 100%;
-  padding: 75px 10px 65px;
+  padding: 10px;
   color: var(--accent-color, #ff0070);
 }
 
@@ -34,9 +34,17 @@
   width: 25px;
   height: 25px;
   border: 1px solid var(--accent-color, #ff0070);
+  color: var(--accent-color, #ff0070);
+}
+
+.border-inline-start {
   border-bottom: none;
   border-left: none;
-  color: var(--accent-color, #ff0070);
+}
+
+.border-inline-end {
+  border-top: none;
+  border-right: none;
 }
 
 .header__rec-eclipse::after {
@@ -57,6 +65,7 @@
 .header__theme-menu {
   display: grid;
   justify-content: end;
+  margin-bottom: 65px;
 }
 
 .header__theme-menu-list {
@@ -86,4 +95,30 @@
 
 .header__theme-menu-button:focus-visible {
   border: 1px solid var(--accent-color, #ff0070);
+}
+
+.title-logo {
+  font-size: var(--title-font-size, 116px);
+  color: var(--title-color, #db00ff);
+  font-weight: 700;
+  line-height: 95.7px;
+  margin-bottom: 55px;
+  text-shadow: 4px 4px var(--accent-color, #ff0070);
+}
+
+.header__question {
+  background-color: var(--accent-color, #ff0070);
+  line-height: var(--line-height-normal, 23.4px);
+  color: var(--background-color, #000028);
+  margin-bottom: 31px;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+}
+
+.eclipse-container {
+  display: grid;
+  justify-content: end;
 }
