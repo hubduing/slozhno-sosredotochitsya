@@ -13,6 +13,7 @@
   min-width: 100%;
   padding: 10px;
   color: var(--accent-color, #ff0070);
+  background-image: url("../images/cover-image-dark.png");
 }
 
 .header__rec {
@@ -98,7 +99,7 @@
 }
 
 .title-logo {
-  font-size: var(--title-font-size, 116px);
+  font-size: min(var(--title-font-size), 116px);
   color: var(--title-color, #db00ff);
   font-weight: 700;
   line-height: 95.7px;
@@ -106,11 +107,64 @@
   text-shadow: 4px 4px var(--accent-color, #ff0070);
 }
 
+.header__question-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
 .header__question {
+  display: block;
+  width: max(355px, 50%);
   background-color: var(--accent-color, #ff0070);
   line-height: var(--line-height-normal, 23.4px);
   color: var(--background-color, #000028);
   margin-bottom: 31px;
+}
+
+.main {
+  min-width: 100%;
+  padding: 10px;
+}
+
+.focus__question {
+  color: var(--accent-color, #ff0070);
+}
+
+.focus__card {
+  min-width: 100%;
+}
+
+.focus__card-title {
+  color: var(--background-color, #000028);
+  background-color: var(--accent-color, #ff0070);
+  margin-bottom: 10px;
+}
+
+.title {
+  margin-top: 50px;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: var(--line-height-normal, 23.4px);
+  margin-bottom: 20px;
+}
+
+.title:first-child {
+  margin-top: 40px;
+}
+
+.focus__card-text {
+  color: var(--text-color, #F1B2CE);
+  margin-bottom: 20px;
+}
+
+.focus__card-text a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.subtitle {
+  margin-bottom: 20px;
 }
 
 .footer {
@@ -121,4 +175,18 @@
 .eclipse-container {
   display: grid;
   justify-content: end;
+}
+
+.galery__card-image {
+  min-width: 100%;
+  margin-bottom: 10px;
+}
+
+.galery__card-image img {
+  max-width: 100%;
+  min-height: fit-content;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px var(--accent-color, #ff0070);
 }
