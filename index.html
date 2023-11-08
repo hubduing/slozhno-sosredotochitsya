@@ -17,9 +17,11 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <div class="header__rec">
-        <p class="header__rec-text">rec</p>
-        <div class="header__rec-eclipse border-inline-start"></div>
+      <div class="header__rec" aria-hidden="true">
+        <div class="header__rec-container">
+          <p class="header__rec-text">rec</p>
+          <div class="header__rec-eclipse border-inline-start"></div>
+        </div>
       </div>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
@@ -54,10 +56,10 @@
           сконцентрироваться, особенно когда очень надо
         </p>
       </div>
-      <div class="header__rec-eclipse border-inline-end"></div>
+      <div class="header__rec-eclipse border-inline-end" aria-hidden="true"></div>
     </header>
     <main class="main">
-      <section class="focus">
+      <section>
         <ul class="focus__card-list">
           <h2 class="focus__question title">
             Почему сосредоточиться так сложно
@@ -68,7 +70,8 @@
               Особенно сложно сосредоточиться, когда задач много и все они —
               важные. Где же легендарная многозадачность, когда она так нужна
               вам (и всем нанимающим менеджерам этого мира)? А дело в том, что
-              её просто не существует. Исследователи <a class="text-shadow" href="#">выяснили</a>, что мозгу тяжело
+              её просто не существует. Исследователи
+              <a class="text-shadow" href="#">выяснили</a>, что мозгу тяжело
               концентрироваться даже на двух делах одновременно. А когда в поле
               внимания попадает несколько важных задач, организм паникует и
               выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы
@@ -88,6 +91,10 @@
               отвлекаешься, тем больше удовольствия получаешь.
             </p>
           </li>
+        </ul>
+      </section>
+      <section>
+        <ul class="focus__card-list">
           <h2 class="focus__question title">
             Что снижает концентрацию внимания?
           </h2>
@@ -125,6 +132,10 @@
               тем больше времени затем нужно, чтобы вернуться к работе.
             </p>
           </li>
+        </ul>
+      </section>
+      <section>
+        <ul class="focus__card-list">
           <h2 class="focus__question title">
             Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
             секунд)
@@ -210,10 +221,10 @@
     <footer class="footer">
       <div class="footer__container">
         <div class="eclipse-container">
-          <div class="header__rec-eclipse border-inline-start"></div>
+          <div class="header__rec-eclipse border-inline-start" aria-hidden="true"></div>
         </div>
         <h2 class="title-logo text-shadow">focus</h2>
-        <div class="header__rec-eclipse border-inline-end"></div>
+        <div class="header__rec-eclipse border-inline-end" aria-hidden="true"></div>
       </div>
     </footer>
     <script src="./scripts/script.js"></script>

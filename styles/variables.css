@@ -7,8 +7,10 @@
   --background-color: #000028;
   --text-color: #F1B2CE;
   --accent-color: #FF0070;
+  --nav-text-color: #FF0070;
   --title-color: #DB00FF;
   --font-size: 18px;
   --line-height-normal: 23.4px;
   --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --background-url: url("../images/cover-image-dark.png");
 }
