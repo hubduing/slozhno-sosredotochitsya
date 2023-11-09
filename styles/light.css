@@ -24,3 +24,19 @@
 .header {
   background-image: var(--background-url);
 }
+
+.header__rec-eclipse::after {
+  display: none;
+}
+
+.header__rec-text {
+  display: none;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+

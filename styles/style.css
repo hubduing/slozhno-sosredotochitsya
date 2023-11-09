@@ -105,7 +105,7 @@
   text-transform: uppercase;
 }
 
-.header__theme-menu-button:focus {
+.header__theme-menu-button:focus-visible {
   outline: none;
   border-bottom: 1px solid var(--nav-text-color, #ff0070);
 }
@@ -183,7 +183,7 @@
   text-decoration: underline;
 }
 
-.focus__card-text a:focus {
+.focus__card-text a:focus-visible {
   cursor: pointer;
   text-decoration: underline;
   outline: 1px solid var(--text-color);
