@@ -10,6 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --font-family: "IBM Plex mono";
+  --title-coor-text: #353430;
   --background-color: #FFF1F7;
   --text-color: #353430;
   --nav-text-color: #353430;
@@ -25,12 +26,13 @@
   background-image: var(--background-url);
 }
 
-.header__rec-eclipse::after {
+.theme_light .header__rec,
+.theme_light .header__rec-eclipse::after {
   display: none;
 }
 
-.header__rec-text {
-  display: none;
+.theme_light .header__rec-eclipse {
+  border-color: var(--text-color);
 }
 
 .footer__container {
@@ -39,4 +41,3 @@
   justify-content: center;
   text-align: center;
 }
-
