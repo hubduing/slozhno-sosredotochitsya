@@ -14,3 +14,22 @@
   --text-color: #F1B2CE;
   --background-url: url("../images/cover-image-dark.png");
 }
+
+@media (prefers-color-scheme: dark) {
+  .page.theme_auto {
+    --color-decorated-zone: #353430;
+    --font-family: "IBM Plex mono";
+    --background-color: #000028;
+    --text-color: #f1b2ce;
+    --accent-color: #ff0070;
+    --nav-text-color: #ff0070;
+    --title-color: #db00ff;
+    --font-size: 18px;
+    --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --background-url: url("../images/cover-image-dark.png");
+    --main-background-color: #152028;
+  }
+  .theme_auto .text__rec {
+    color: var(--accent-color, #ff0070);
+  }
+}

@@ -19,3 +19,21 @@
   --background-url: url("../images/cover-image-light.png");
 }
 
+@media (prefers-color-scheme: light) {
+  .page.theme_auto {
+    --color-decorated-zone: #ff0070;
+    --font-family: "IBM Plex mono";
+    --title-coor-text: #353430;
+    --background-color: #fff1f7;
+    --text-color: #353430;
+    --nav-text-color: #353430;
+    --accent-color: #ff8dcb;
+    --title-color: #ffc2e6;
+    --font-size: 18px;
+    --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --background-url: url("../images/cover-image-light.png");
+  }
+  .theme_auto .text__rec {
+    display: none;
+  }
+}

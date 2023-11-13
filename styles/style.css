@@ -6,7 +6,7 @@
   font-size: var(--font-size, 18px);
   background-color: var(--background-color, #000028);
   background-image: url("../images/cover-image-dark.png");
-  background-attachment: fixed;  
+  background-attachment: fixed;
   line-height: var(--line-height-normal, 23.4px);
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
@@ -206,7 +206,7 @@
 }
 
 .theme_dark .header__rec-text {
-  color: var(--accent-color, #FF0070);
+  color: var(--accent-color, #ff0070);
 }
 
 .focus__card-text {
@@ -505,43 +505,5 @@
 
   .galery__card-image-list {
     height: calc(1091px - 23px - 20px);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .page.theme_auto {
-    --color-decorated-zone: #353430;
-    --font-family: "IBM Plex mono";
-    --background-color: #000028;
-    --text-color: #f1b2ce;
-    --accent-color: #ff0070;
-    --nav-text-color: #ff0070;
-    --title-color: #db00ff;
-    --font-size: 18px;
-    --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    --background-url: url("../images/cover-image-dark.png");
-    --main-background-color: #152028;
-  }
-  .theme_auto .text__rec {
-    color: var(--accent-color, #ff0070);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .page.theme_auto {
-    --color-decorated-zone: #FF0070;
-    --font-family: "IBM Plex mono";
-    --title-coor-text: #353430;
-    --background-color: #fff1f7;
-    --text-color: #353430;
-    --nav-text-color: #353430;
-    --accent-color: #ff8dcb;
-    --title-color: #ffc2e6;
-    --font-size: 18px;
-    --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    --background-url: url("../images/cover-image-light.png");
-  }
-  .theme_auto .text__rec {
-    display: none;
   }
 }
