@@ -2,7 +2,6 @@
 
 .page {
   min-width: 100%;
-  min-height: 100%;
   font-family: var(--font-family, Arial, Helvetica, sans-serif);
   font-size: var(--font-size, 18px);
   background-color: var(--background-color, #000028);
@@ -13,13 +12,17 @@
 }
 
 .header {
-  position: relative;
   min-width: 100%;
+  min-height: 100vh;
   padding: 74px 10px 65px;
   background-image: url("../images/cover-image-dark.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.decorated-zone {
+  position: relative;
 }
 
 .decorated-zone::before {
@@ -182,16 +185,12 @@
   font-size: var(--font-size, 18px);
 }
 
-.focus__question.title {
+.focus__question {
   font-size: var(--font-size, 18px);
   font-weight: 700;
   background-color: transparent;
   color: var(--accent-color, #ff0070);
-}
-
-.title {
   font-size: inherit;
-  font-weight: 700;
 }
 
 .header {
@@ -217,16 +216,14 @@
 .focus__card-text a {
   text-decoration: none;
   cursor: pointer;
+  outline: none;
 }
 
 .focus__card-text a:hover {
-  cursor: pointer;
   text-decoration: underline;
 }
 
 .focus__card-text a:focus-visible {
-  cursor: pointer;
-  text-decoration: underline;
   outline: 1px solid var(--text-color);
 }
 
@@ -235,11 +232,11 @@
 }
 
 .footer {
-  position: relative;
   display: grid;
+  min-height: 100vh;
   padding: 10px;
   width: 100%;
-  min-height: 100vw;
+  max-height: 100vh;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -261,21 +258,7 @@
 
 .galery__card-image {
   min-width: 100%;
-  overflow: hidden;
 }
-
-.galery__card-image:nth-child(odd) {
-  height: 237px;
-}
-
-.galery__card-image:nth-child(even) {
-  height: 355px;
-}
-
-.galery__card-image:first-child {
-  height: 142px;
-}
-
 
 .galery__card-image img {
   object-fit: cover;
@@ -293,9 +276,8 @@
   .footer {
     --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     display: grid;
-    position: relative;
     z-index: 0;
-    min-height: 100vw;
+    max-height: 100vh;
     padding: 20px;
   }
 
@@ -312,8 +294,7 @@
   }
 
   .header {
-    padding: 192px 20px 183px;
-    align-content: space-between;
+    align-content: space-evenly;
   }
 
   .footer {
@@ -407,7 +388,7 @@
     gap: 20px;
     height: 780px;
     grid-template-columns: repeat(3, calc((100% - 40px) / 3));
-    grid-template-rows: 192px 230px 318px;
+    grid-template-rows: 1fr 2fr 3fr;
   }
 
   .galery__card-image:first-child {
@@ -452,8 +433,7 @@
   .header,
   .footer {
     display: grid;
-    min-height: 100vw;
-    max-height: 100vw;
+    max-height: 100vh;
     padding: 20px;
   }
 
@@ -525,7 +505,6 @@
 
   .galery__card-image-list {
     height: calc(1091px - 23px - 20px);
-    grid-template-rows: 260px 315px 428px;
   }
 }
 
