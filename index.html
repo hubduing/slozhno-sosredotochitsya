@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="color-sheme" content="dark light" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico" type="/images/favicon.ico" />
+    <link rel="icon" href="./images/favicon.svg" type="image/x-icon" />
+    <link rel="icon" href="./images/favicon.svg" sizes="any" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -17,10 +19,7 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <div class="header__rec-eclipse border-inline-start"></div>
-      <div class="header__rec">
-        <p class="header__rec-text" aria-hidden="true">rec</p>
-      </div>
+      <span class="text__rec" aria-hidden="true">rec</span>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -49,25 +48,21 @@
       </nav>
       <h1 class="title-logo">no focus</h1>
       <div class="header__question-container">
-        <p class="header__question">
+        <p class="header__question title-decor">
           Что делать, когда не можешь делать ничего<br />
           Или почему нам так сложно сконцентрироваться, особенно когда очень
           надо
         </p>
       </div>
-      <div
-        class="header__rec-eclipse border-inline-end"
-        aria-hidden="true"
-      ></div>
     </header>
     <main class="main">
       <section>
-        <ul class="focus__card-list">
-          <h2 class="focus__question title">
+        <article class="focus__card-list">
+          <h3 class="focus__question title">
             Почему сосредоточиться так сложно
-          </h2>
-          <li class="focus__card">
-            <h3 class="focus__card-title">Многозадачность</h3>
+          </h3>
+          <article class="focus__card">
+            <h4 class="focus__card-title title-decor">Многозадачность</h4>
             <p class="focus__card-text">
               Особенно сложно сосредоточиться, когда задач много и все они —
               важные. Где же легендарная многозадачность, когда она так нужна
@@ -79,9 +74,9 @@
               выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы
               работаем невнимательно: ошибаемся и быстро устаём.
             </p>
-          </li>
-          <li class="focus__card">
-            <h3 class="focus__card-title">Дофамин</h3>
+          </article>
+          <article class="focus__card">
+            <h4 class="focus__card-title title-decor">Дофамин</h4>
             <p class="focus__card-text">
               С гормонами стресса всё понятно, но дальше — ещё интереснее. В
               нашей невозможности сосредоточиться замешана и полная
@@ -92,17 +87,16 @@
               чувствуем удовольствие. Получается замкнутый круг: чем больше
               отвлекаешься, тем больше удовольствия получаешь.
             </p>
-          </li>
-        </ul>
+          </article>
+        </article>
       </section>
       <section>
-        <ul class="focus__card-list">
-          <h2 class="focus__question title">
-            Что снижает<br />
-            концентрацию внимания?
-          </h2>
-          <li class="focus__card">
-            <h3 class="focus__card-title">Многозадачность</h3>
+        <article class="focus__card-list">
+          <h3 class="focus__question title">
+            Что снижает концентрацию внимания?
+          </h3>
+          <article class="focus__card">
+            <h4 class="focus__card-title title-decor">Многозадачность</h4>
             <p class="focus__card-text">
               Как концентрация может снижаться из-за… концентрации? Любая
               стрессовая ситуация (и резко меняющийся мир в целом) заставляет
@@ -111,9 +105,9 @@
               собранными всё время — невозможно. Концентрация — мышца, и она
               может не выдержать, если не давать ей отдохнуть.
             </p>
-          </li>
-          <li class="focus__card">
-            <h3 class="focus__card-title">Еда</h3>
+          </article>
+          <article class="focus__card">
+            <h4 class="focus__card-title title-decor">Еда</h4>
             <p class="focus__card-text">
               «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
               доставляют в мозг энергию и помогают ему лучше работать. Но уходит
@@ -122,9 +116,9 @@
               углеводов» заканчивается, мы чувствуем усталость и сонливость. И
               хотим ещё больше быстрых углеводов.
             </p>
-          </li>
-          <li class="focus__card">
-            <h3 class="focus__card-title">Гаджеты</h3>
+          </article>
+          <article class="focus__card">
+            <h4 class="focus__card-title title-decor">Гаджеты</h4>
             <p class="focus__card-text">
               Да-да, это та самая ситуация, когда на экране ноутбука — код, в
               наушниках — подкаст, а на компьютере фоном — ещё и видео с
@@ -134,20 +128,22 @@
               Вот и получается, что чем больше времени мы проводим в гаджетах,
               тем больше времени затем нужно, чтобы вернуться к работе.
             </p>
-          </li>
-        </ul>
+          </article>
+        </article>
       </section>
       <section>
-        <ul class="focus__card-list">
-          <h2 class="focus__question title">
+        <article class="focus__card-list">
+          <h3 class="focus__question title">
             Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
             секунд)
-          </h2>
-          <li class="focus__card">
-            <h3 class="focus__card-title subtitle">
+          </h3>
+          <article class="focus__card">
+            <h4 class="focus__card-title title-decor subtitle">
               5 простых (на самом деле не очень) советов
-            </h3>
-            <h3 class="focus__card-title">Представьте небо и облака</h3>
+            </h4>
+            <h5 class="focus__card-title title-decor">
+              Представьте небо и облака
+            </h5>
             <p class="focus__card-text">
               Или листья в ручье. Тут дело в лёгкой медитации, которая помогает
               успокоиться. Ведь часто именно тревожные мысли о сложных задачах
@@ -158,18 +154,18 @@
               вернуться в настоящий момент, а не волноваться о потенциальных
               проблемах из будущего.
             </p>
-          </li>
-          <li class="focus__card">
-            <h3 class="focus__card-title">Включите музыку</h3>
+          </article>
+          <article class="focus__card">
+            <h5 class="focus__card-title title-decor">Включите музыку</h5>
             <p class="focus__card-text">
               Но не любую, и не любимую. Любимая может быть связана с сильными
               положительными эмоциями, которые тоже очень сильно отвлекают.
               Подойдёт тихая, спокойная, умеренно-ритмичная. Можно вообще
               попробовать включить плейлист в «белым шумом» или нейромузыкой.
             </p>
-          </li>
-          <li class="focus__card">
-            <h3 class="focus__card-title">Прогуляйтесь</h3>
+          </article>
+          <article class="focus__card">
+            <h5 class="focus__card-title title-decor">Прогуляйтесь</h5>
             <p class="focus__card-text">
               Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
               показал, что созерцание природы повышает концентрацию, в то время
@@ -179,60 +175,52 @@
               работать. Но и простая двадцатиминутная прогулка — тоже отличный
               вариант.
             </p>
-          </li>
-          <li class="focus__card">
-            <h3 class="focus__card-title">Хорошо ешьте</h3>
+          </article>
+          <article class="focus__card">
+            <h5 class="focus__card-title title-decor">Хорошо ешьте</h5>
             <p class="focus__card-text">
               Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
               которые препятствуют резким скачкам сахара в крови. Например, с
               высоким содержанием клетчатки: овощи, ягоды, бобовые (нут,
               чечевица, фасоль), коричневый рис, хлеб из цельнозерновой пшеницы.
             </p>
-          </li>
-          <li class="focus__card">
-            <h3 class="focus__card-title">Читайте</h3>
+          </article>
+          <article class="focus__card">
+            <h5 class="focus__card-title title-decor">Читайте</h5>
             <p class="focus__card-text">
               Настоящие бумажные книги. Это правда помогает с концентрацией:
               чтобы прочитать пост в соцсети, достаточно нескольких минут или
               даже секунд. А вот интересная книга способна затянуть и на
               несколько часов и круто тренирует направленное внимание.
             </p>
-          </li>
-        </ul>
+          </article>
+        </article>
       </section>
       <section class="galery">
-        <h3 class="galery__title focus__card-title">А можно в картинках?</h3>
+        <h3 class="galery__title focus__card-title title-decor">
+          А можно в картинках?
+        </h3>
         <ul class="galery__card-image-list">
           <li class="galery__card-image">
-            <img src="./images/sunset.png" alt="Заход солнца" />
+            <img loading="lazy" src="./images/sunset.png" alt="Заход солнца" />
           </li>
           <li class="galery__card-image">
-            <img src="./images/ice-cream.png" alt="Мороженное" />
+            <img loading="lazy" src="./images/ice-cream.png" alt="Мороженное" />
           </li>
           <li class="galery__card-image">
-            <img src="./images/tape.png" alt="Дискета" />
+            <img loading="lazy" src="./images/tape.png" alt="Дискета" />
           </li>
           <li class="galery__card-image">
-            <img src="./images/books.png" alt="Книги" />
+            <img loading="lazy" src="./images/books.png" alt="Книги" />
           </li>
           <li class="galery__card-image">
-            <img src="./images/street.png" alt="Улица" />
+            <img loading="lazy" src="./images/street.png" alt="Улица" />
           </li>
         </ul>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer__container">
-        <div
-          class="header__rec-eclipse border-inline-start"
-          aria-hidden="true"
-        ></div>
-        <h2 class="title-logo text-shadow">focus</h2>
-        <div
-          class="header__rec-eclipse border-inline-end"
-          aria-hidden="true"
-        ></div>
-      </div>
+    <footer class="footer decorated-zone">
+      <h2 class="title-logo text-shadow">focus</h2>
     </footer>
     <script src="./scripts/script.js"></script>
   </body>
