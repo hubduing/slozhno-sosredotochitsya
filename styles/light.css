@@ -1,15 +1,5 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-  --color-decorated-zone: #FF0070;
+  --color-decorated-zone: #FF8DCB;
   --title-coor-text: #353430;
   --background-color: #FFF1F7;
   --text-color: #353430;
@@ -19,18 +9,19 @@
   --background-url: url("../images/cover-image-light.png");
 }
 
+.page.theme_light .text__rec {
+  display: none;
+}
+
 @media (prefers-color-scheme: light) {
-  .page.theme_auto {
-    --color-decorated-zone: #ff0070;
-    --font-family: "IBM Plex mono";
-    --title-coor-text: #353430;
+  :root {
+    --color-decorated-zone: #FF8DCB;
     --background-color: #fff1f7;
     --text-color: #353430;
     --nav-text-color: #353430;
     --accent-color: #ff8dcb;
     --title-color: #ffc2e6;
-    --font-size: 18px;
-    --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --title-coor-text: #353430;
     --background-url: url("../images/cover-image-light.png");
   }
   .theme_auto .text__rec {
