@@ -3,8 +3,8 @@
   --title-coor-text: #000028;
   --text-color: #F1B2CE;
   --background-url: url("../images/cover-image-dark.png");
-}
-
-.page.theme_dark .text__rec {
-  color: var(--accent-color, #ff0070);
+  --background-color: #000028;
+  --nav-text-color: #FF0070;
+  --accent-color: #FF0070;
+  --title-color: #DB00FF;
 }

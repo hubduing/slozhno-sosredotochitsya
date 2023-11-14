@@ -1,25 +1,23 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
 :root {
   --font-family: "IBM Plex mono", monospace;
-  --color-decorated-zone: #FF0070;
+  --color-decorated-zone: #ff0070;
   --title-coor-text: #000028;
   --background-color: #000028;
-  --text-color: #F1B2CE;
-  --accent-color: #FF0070;
-  --nav-text-color: #FF0070;
-  --title-color: #DB00FF;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --nav-text-color: #ff0070;
+  --title-color: #db00ff;
   --font-size: 18px;
-  --line-height-normal: 130%;
-  --line-height-title: 129.53px;
-  --outline-opacity: rgba(255,0,112, 0.4);
+  --font-title-weight: 700;
+  --line-height-normal: 23.4px;
+  --line-height-title: 82.5%;
+  --outline-opacity: rgba(255, 0, 112, 0.4);
   --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --title-font-size-pc: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --background-url: url("../images/cover-image-dark.png");
 }
 
-.page.theme_light .text__rec {
-  display: none;
+@media (768px <= width) {
+  :root {
+    --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }
