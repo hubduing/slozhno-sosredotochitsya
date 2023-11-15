@@ -149,8 +149,11 @@
   width: 100%;
 }
 
-.title-decor {
+.fw-decor {
   font-weight: var(--font-title-weight, 700);
+}
+
+.title-decor {
   background-color: var(--color-decorated-zone, #ff0070);
   color: var(--title-coor-text, #000028);
 }
@@ -251,7 +254,6 @@
 
 .galery__title {
   font-size: var(--font-size, 18px);
-  font-weight: var(--);
 }
 
 .galery__card-image-list {
@@ -286,10 +288,6 @@
     z-index: 0;
     padding: 191px 20px 183px;
     align-content: space-between;
-  }
-
-  .header__theme-menu {
-    margin-bottom: 0;
   }
 
   .galery {
@@ -353,6 +351,10 @@
 
   .focus__card-list:nth-child(3) .focus__card {
     gap: 20px;
+  }
+
+  .focus__card-list:nth-child(3) .focus__card-description .focus__card-title {
+    font-weight: normal;
   }
 
   .focus__card-list:nth-child(2) {
